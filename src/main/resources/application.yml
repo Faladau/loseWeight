@@ -1,0 +1,17 @@
+spring:
+  datasource:
+      url: jdbc:mysql://localhost:3306/loseWeight
+      username: root
+      password: root
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+  liquibase:
+    change-log: db/master-changelog.xml
+    enabled: true
+
+server:
+  port: 8090
